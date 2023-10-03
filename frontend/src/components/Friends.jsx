@@ -52,7 +52,7 @@ function refreshPage() {
 const displayFriends = () => {
 
     return (
-        <div className='mx-4'>
+        <div className=''>
             <h1 className='pt-5'>{title}</h1>
             <h3>Season {season} Episode {episode}</h3>
             <h4>Rating: {rating}</h4>
@@ -63,11 +63,12 @@ const displayFriends = () => {
 
 
   return (
-    <div className='bg-friends'>
-
+    <div className='bg-friends '>
+<div className="container">
         {displayFriends()}
 
-        <button className=' mx-4 btn btn-light fs-6' onClick={refreshPage} >Generate</button>
+        <button className=' btn btn-light fs-6' onClick={refreshPage} >Generate</button>
+        </div>
     </div>
   )
 }
