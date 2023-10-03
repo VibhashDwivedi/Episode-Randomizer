@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-const Tbbt = () => {
+const Got = () => {
     const api = ' http://127.0.0.1:5000'
 
 
     const [friends, setFriends] = useState([])
     
     const getFriends = async () => {
-        const response = await fetch(`${api}/getepisodetbbt`)
+        const response = await fetch(`${api}/getepisodegot`)
         const data = await response.json()
         console.log(data)
         setFriends(data)
@@ -51,18 +51,18 @@ const Tbbt = () => {
     const displayFriends = () => {
     
         return (
-            <div className='mx-4'>
-                <h1 className='pt-5'>{title}</h1>
+            <div>
+                <h1>{title}</h1>
                 <h3>Season {season} Episode {episode}</h3>
                 <h4>Rating: {rating}</h4>
-                <h5 className='fw-lighter'>{summary}</h5>
+                <p>{summary}</p>
             </div>
         )
     }
     
     
       return (
-        <div className='bg-tbbt'>
+        <div>
     
             {displayFriends()}
     
@@ -71,4 +71,4 @@ const Tbbt = () => {
       )
 }
 
-export default Tbbt
+export default Got

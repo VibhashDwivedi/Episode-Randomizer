@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
-const Tbbt = () => {
+const Office = () => {
     const api = ' http://127.0.0.1:5000'
 
 
     const [friends, setFriends] = useState([])
     
     const getFriends = async () => {
-        const response = await fetch(`${api}/getepisodetbbt`)
+        const response = await fetch(`${api}/getepisodetheoffice`)
         const data = await response.json()
         console.log(data)
         setFriends(data)
@@ -62,7 +62,7 @@ const Tbbt = () => {
     
     
       return (
-        <div className='bg-tbbt'>
+        <div className='bg-office'>
     
             {displayFriends()}
     
@@ -71,4 +71,4 @@ const Tbbt = () => {
       )
 }
 
-export default Tbbt
+export default Office
