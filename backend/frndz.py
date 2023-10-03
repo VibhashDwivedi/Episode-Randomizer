@@ -20,10 +20,18 @@ def index():
 
 @app.route('/getepisode')
 def get_episode():
-    data = pd.read_csv('Frnds4.csv', encoding='cp1252')
-    Generator = data.iloc[[random.randint(1, 236)], [1, 2, 3, 4]]
+    data = pd.read_csv('friends.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 236)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
+
+
+@app.route('/getepisodehimym')
+def get_episode_himym():
+    data = pd.read_csv('himym.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 208)], [1, 2, 3, 4, 5, 6, 7]]
+    x = Generator.to_json()
+    return x    
      
   
 
