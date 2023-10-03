@@ -53,7 +53,21 @@ def get_episode_office():
     data = pd.read_csv('the_office.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 188)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
+    return x
+
+@app.route('/getepisodebrooklyn99')
+def get_episode_brooklyn():
+    data = pd.read_csv('b99.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 153)], [1, 2, 3, 4, 5, 6, 7]]
+    x = Generator.to_json()
     return x 
+
+@app.route('/getepisodegot')
+def get_episode_got():
+    data = pd.read_csv('got.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 73)], [1, 2, 3, 4, 5, 6, 7]]
+    x = Generator.to_json()
+    return x
 
 
     
