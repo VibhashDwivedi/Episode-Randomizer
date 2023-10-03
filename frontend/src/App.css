@@ -1,3 +1,13 @@
+.bg-home{
+  background-color: #0CAFFF;
+}
+
+.bg-navbar{
+  background-color: #003153;
+  color: whitesmoke;
+}
+
+
 .bg-friends
 {
   color: white;
@@ -6,6 +16,8 @@
   background-size: cover;
   min-height: 93vh;
 }
+
+
 .bg-himym
 {
   color: white;
@@ -37,4 +49,58 @@
   background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.842)),url(https://wallpapercave.com/wp/wp4013892.jpg);
   background-size: cover;
   min-height: 93vh;
+}
+.bg-got
+{
+  color: white;
+  font-family: 'open san';
+  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.842)),url(https://www.wallpaperflare.com/static/663/960/1016/game-of-thrones-game-thrones-poster-wallpaper-preview.jpg);
+  background-size: cover;
+  min-height: 93vh;
+}
+
+.bg-b99{
+  color: white;
+  font-family: 'open san';
+  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.842)),url(https://wallpaperaccess.com/full/1455757.jpg);
+  background-size: cover;
+  min-height: 93vh;
+}
+
+.bg-simpsons{
+  color: white;
+  font-family: 'open san';
+  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.842)),url(https://m.media-amazon.com/images/I/A165iqNDCAL.jpg);
+  background-size: cover;
+  min-height: 93vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .bg-friends{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.678)),url(https://i.pinimg.com/564x/38/08/4c/38084cd8dadf9d00224fa88cf4b5e377.jpg);
+  }
+  .bg-himym{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.815)),url(https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_FMjpg_UX1000_.jpg);
+  }
+  .bg-tbbt{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.815)),url(https://rukminim1.flixcart.com/image/850/1000/l2f20sw0/poster/a/g/8/small-the-big-bang-theory-poster-for-room-lp-big-bang-theory-28-original-imagdrvwfjcuurhj.jpeg?q=20);
+  }
+  
+  .bg-modern{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://rukminim2.flixcart.com/image/850/1000/l52sivk0/poster/k/h/b/medium-butcutnw13923-modern-family-matte-finish-poster-butcute-original-imagfttvyzdsbryv.jpeg?q=20);
+  }
+  .bg-office{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://www.themoviedb.org/t/p/original/e2QXQY8al5nY2niTiaFiBJ3hk5a.jpg);
+  }
+  .bg-got{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://i.pinimg.com/1200x/ae/8c/21/ae8c21bc78b35923cdd54ef5868915ef.jpg);
+  }
+  .bg-b99{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://wallpapercave.com/wp/wp6790818.jpg);
+  }
+  .bg-simpsons{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDa04X0OIJijo3ii5N-NqDDlmS4Ewczehkg&usqp=CAU);
+  }
+  
 }

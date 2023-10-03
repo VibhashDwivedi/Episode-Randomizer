@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-  return (
-    <div>
+    return (
+    <div className='bg-home'>
     <div className='d-flex justify-content-center'>
     <h1 className='fw-bold mt-3'>Random Episode Generator</h1></div>
     <div className='container'>
