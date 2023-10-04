@@ -2,6 +2,5 @@ Flask==1.0.2
 
 
 
-# python library
-import random
-import pandas as pd
+
+
