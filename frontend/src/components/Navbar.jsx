@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         
-        <Link to="/home"><button className='btn btn-secondary'>Home</button></Link>
+        {/* <Link to="/home"><button className='btn btn-secondary'>Home</button></Link> */}
          {/* <button className="ms-2 btn btn-secondary">About</button> */}
       </ul>
      
