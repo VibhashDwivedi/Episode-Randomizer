@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const Modern = () => {
-    const api = ' http://127.0.0.1:5000'
+    const api = 'https://episode-randomizer-8ij4.onrender.com'
 
 
     const [friends, setFriends] = useState([])
