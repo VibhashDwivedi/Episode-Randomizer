@@ -1,8 +1,6 @@
 Flask==1.0.2
 
-# Install the application
-COPY . /app
-WORKDIR /app
+
 
 # Run the application
 CMD ["python", "app.py"]
