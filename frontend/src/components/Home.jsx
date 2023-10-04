@@ -62,7 +62,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/the-office'>
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/game-of-thrones'>
@@ -88,7 +88,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/b99'>
@@ -101,7 +101,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1  mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2  mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/simpsons'>
@@ -114,7 +114,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3 mb-5'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3 mb-5'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/community'>
