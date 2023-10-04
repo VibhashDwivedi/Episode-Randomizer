@@ -2,7 +2,7 @@ Flask==1.0.2
 
 
 #include gunicorn
-pip install gunicorn==19.9.0
+pip install pandas
 
 
 
