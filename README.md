@@ -23,6 +23,6 @@ and many more....
 
 ![](https://github.com/VibhashDwivedi/Episode-Randomizer/blob/main/Screenshots/Screenshot%20(181).png?raw=true)
 
-![](https://github.com/VibhashDwivedi/Episode-Randomizer/blob/main/Screenshots/Screenshot%20(181).png?raw=true)
+![](https://github.com/VibhashDwivedi/Episode-Randomizer/blob/main/Screenshots/Screenshot%20(182).png?raw=true)
 
 
