@@ -10,7 +10,7 @@ const Home = () => {
       
     <div className='row'>
         
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/friends'>
@@ -23,7 +23,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/himym'>
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1 mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/tbbt'>
@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             </div>
         </div>
-        <div className='col-sm-12 col-md-3 px-5 px-md-1  mt-3'>
+        <div className='col-sm-12 col-md-3 px-5 px-md-2  mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/modern-family'>
