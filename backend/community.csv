@@ -1,4 +1,4 @@
-Number,episode_num,season,imdb_rating,total_votes,desc,title,original_air_date
+Number,Episode,Season,Stars,total_votes,Summary,Title,original_air_date
 1,1,1,7.7,4624,"An ex-lawyer is forced to return to community college to get a degree. However, he tries to use the skills he learned as a lawyer to get the answers to all his tests and pick up on a sexy woman in his Spanish class.",Pilot,9/17/2009
 2,2,1,7.8,4034,"Jeff takes steps to ensure that Britta will be his partner in Spanish class, but winds up with Pierce instead.",Spanish 101,9/24/2009
 3,3,1,8.2,3978,"Britta comes between Abed and his father when she signs him up for a film class, and Jeff risks failing a class unless he ""seizes the day.""",Introduction to Film,10/1/2009

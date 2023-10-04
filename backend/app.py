@@ -70,11 +70,20 @@ def get_episode_got():
     return x
 
 @app.route('/getepisodesimpsons')
-def get_episode_community():
+def get_episode_simpson():
     data = pd.read_csv('simpsons.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 110)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
+
+@app.route('/getepisodecommunity')
+def get_episode_community():
+    data = pd.read_csv('community.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 110)], [1, 2, 3, 4, 5, 6, 7]]
+    x = Generator.to_json()
+    return x
+
+
 
 
     

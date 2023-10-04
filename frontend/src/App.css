@@ -1,5 +1,5 @@
 .bg-home{
-  background-color: #0CAFFF;
+  background-color: #0caeffd0;
 }
 
 .bg-navbar{
@@ -75,6 +75,14 @@
   min-height: 93vh;
 }
 
+.bg-community{
+  color: white;
+  font-family: 'open san';
+  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://wallpaperbat.com/img/543388-yes-another-few-community-wallpaper-george-spigots-blog.jpg);
+  background-size: cover;
+  min-height: 93vh;
+}
+
 @media only screen and (max-width: 600px) {
 
   .bg-friends{
@@ -101,6 +109,10 @@
   }
   .bg-simpsons{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDa04X0OIJijo3ii5N-NqDDlmS4Ewczehkg&usqp=CAU);
+  }
+
+  .bg-community{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://i.redd.it/season-1-6-posters-v0-jy15dyahjv9a1.jpg?width=736&format=pjpg&auto=webp&s=0ad0d9ccce456f94dfa90fffdb31366ec2995ca4);
   }
   
 }

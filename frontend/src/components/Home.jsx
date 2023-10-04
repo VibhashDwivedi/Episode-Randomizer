@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
     <div className='bg-home'>
-    <div className='d-flex justify-content-center'>
-    <h1 className='fw-bold mt-3'>Random Episode Generator</h1></div>
+    <div className='d-flex justify-content-center container'>
+    <p className='fs-5 mt-3 text-light-emphasis' style={{textAlign:'center'}}>Not sure what to watch? We've got you covered! Dive into your favorite series with a twist – discover random episodes with Episode Randomizer</p></div>
     <div className='container'>
       
     <div className='row'>
@@ -109,6 +109,19 @@ const Home = () => {
                 <h5 className='card-title'>The Simpsons</h5>
                 <div className='d-flex justify-content-center mt-2'>
                 <Link to='/simpsons' className='btn btn-primary '>Generate</Link>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+        <div className='col-sm-12 col-md-3  mt-3 mb-5'>
+            <div className='card'>
+            <div className='card-body'>
+            <Link to='/community'>
+                <img className='card-img-top'  height={320} src="https://picfiles.alphacoders.com/192/thumb-192752.jpg"/></Link>
+                <h5 className='card-title'>Community</h5>
+                <div className='d-flex justify-content-center mt-2'>
+                <Link to='/community' className='btn btn-primary '>Generate</Link>
                 </div>
                
             </div>

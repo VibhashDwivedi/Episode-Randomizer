@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 
-const Got = () => {
+const Community = () => {
+
     const api = ' http://127.0.0.1:5000'
 
 
     const [friends, setFriends] = useState([])
     
     const getFriends = async () => {
-        const response = await fetch(`${api}/getepisodegot`)
+        const response = await fetch(`${api}/getepisodecommunity`)
         const data = await response.json()
         console.log(data)
         setFriends(data)
@@ -51,26 +52,27 @@ const Got = () => {
     const displayFriends = () => {
     
         return (
-            <div>
+            <div className=''>
                 <h1 className='pt-5'>{title}</h1>
                 <h3>Season {season} Episode {episode}</h3>
                 <h4>Rating: {rating}</h4>
-                <h5>{summary}</h5>
+                <h5 className='fw-light'>{summary}</h5>
             </div>
         )
     }
     
     
       return (
-        <div className='bg-got'>
-            <div className="container">
-    
+        <div className='bg-community '>
+    <div className="container">
             {displayFriends()}
     
-            <button className='  btn btn-light fs-6' onClick={refreshPage} >Generate Next Episode</button>
+            <button className=' btn btn-light fs-6' onClick={refreshPage} >Generate Next Episode</button>
             </div>
         </div>
       )
+
+  
 }
 
-export default Got
+export default Community

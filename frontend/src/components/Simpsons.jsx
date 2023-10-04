@@ -67,7 +67,7 @@ const Simpsons = () => {
     
             {displayFriends()}
     
-            <button className='  btn btn-light fs-6' onClick={refreshPage} >Generate</button>
+            <button className='  btn btn-light fs-6' onClick={refreshPage} >Generate Next Episode</button>
             </div>
         </div>
       )
