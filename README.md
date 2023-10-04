@@ -9,7 +9,7 @@ Generate a random episode of your favorite series
 
 ## Includes Popular Shows Like
 - `Friends`
-- `How I MetYour Mother`
+- `How I Met Your Mother`
 - `The Big Bang Theory`
 - `Modern Family`
 - `Game Of Thrones`
