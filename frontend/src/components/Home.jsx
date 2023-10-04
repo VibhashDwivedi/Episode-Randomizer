@@ -10,7 +10,7 @@ const Home = () => {
       
     <div className='row'>
         
-        <div className='col-sm-12 col-md-3  mt-3'>
+        <div className='col-sm-12 col-md-3 mx-3 mx-md-0 mt-3'>
             <div className='card'>
             <div className='card-body'>
             <Link to='/friends'>
