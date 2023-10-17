@@ -55,7 +55,7 @@ const Simpsons = () => {
                 <h1 className='pt-5'>{title}</h1>
                 <h3>Season {season} Episode {episode}</h3>
                 <h4>Rating: {rating}</h4>
-                <h5>{summary}</h5>
+                <h5 className='fw-lighter'>{summary}</h5>
             </div>
         )
     }
