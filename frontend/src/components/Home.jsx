@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Rotate from 'react-reveal/Rotate';
-import Flip from 'react-reveal/Flip';
+
+// import Flip from 'react-reveal/Flip';
 
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
     <div className='row'>
         
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
-            <Flip left>
+            {/* <Flip left> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/friends'>
@@ -23,10 +23,10 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
-        <Flip right>
+        {/* <Flip right> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/himym'>
@@ -36,11 +36,11 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
             
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
-        <Flip left>
+        {/* <Flip left> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/tbbt'>
@@ -50,10 +50,10 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2  mt-3'>
-        <Flip right>
+        {/* <Flip right> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/modern-family'>
@@ -63,10 +63,10 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
-        <Flip right>
+        {/* <Flip right> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/the-office'>
@@ -76,10 +76,10 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
-        <Flip left>
+        {/* <Flip left> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/game-of-thrones'>
@@ -89,10 +89,10 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3'>
-        <Flip right>
+        {/* <Flip right> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/b99'>
@@ -102,10 +102,10 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2  mt-3'>
-        <Flip left>
+        {/* <Flip left> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/simpsons'>
@@ -115,10 +115,10 @@ const Home = () => {
                
             </div>
             </div>
-             </Flip>
+             {/* </Flip> */}
         </div>
         <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3 mb-5'>
-        <Flip left>
+        {/* <Flip left> */}
             <div className='card'>
             <div className='card-body'>
             <Link to='/community'>
@@ -128,7 +128,7 @@ const Home = () => {
                
             </div>
             </div>
-            </Flip>
+            {/* </Flip> */}
         </div>
       
         
