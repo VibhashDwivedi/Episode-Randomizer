@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const Tmkoc = () => {
-    const api = 'https://episode-randomizer-8ij4.onrender.com'
+    const api = 'https://episode-randomizer.onrender.com'
 
 
     const [friends, setFriends] = useState([])
