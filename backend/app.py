@@ -84,7 +84,7 @@ def get_episode_community():
     return x
 
 @app.route('/getepisodetmkoc')
-def get_episode_community():
+def get_episode_tmkoc():
     data = pd.read_csv('tmkoc.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 110)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
