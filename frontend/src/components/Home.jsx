@@ -131,6 +131,20 @@ const Home = () => {
             {/* </Flip> */}
         </div>
       
+        <div className='col-sm-12 col-md-3 px-5 px-md-2 mt-3 mb-5'>
+        {/* <Flip left> */}
+            <div className='card'>
+            <div className='card-body'>
+            <Link to='/tmkoc'>
+                <img className='card-img-top'  height={320} src="https://picfiles.alphacoders.com/192/thumb-192752.jpg"/></Link>
+                <h5 className='card-title'>TMKOC</h5>
+                
+               
+            </div>
+            </div>
+            {/* </Flip> */}
+        </div>
+      
         
        
        

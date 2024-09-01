@@ -14,6 +14,7 @@ import Simpsons from './components/Simpsons';
 import Community from './components/Community';
 import Tbbt from './components/Tbbt';
 import About from './components/About';
+import Tmkoc from './components/Tmkoc';
 
 
 
@@ -36,7 +37,8 @@ function App() {
        <Route path ='/b99' element={<B99/>} />
        <Route path ='/simpsons' element={<Simpsons/>} />
        <Route path ='/community' element={<Community/>} />
-       <Route path ='/about' element={<About/>} />
+       <Route path ='/tmkoc' element={<Tmkoc/>} />
+
 
 
       </Routes>

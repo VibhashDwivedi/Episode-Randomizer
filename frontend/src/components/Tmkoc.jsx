@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Tbbt = () => {
+const Tmkoc = () => {
     const api = 'https://episode-randomizer-8ij4.onrender.com'
 
 
@@ -72,4 +72,4 @@ const Tbbt = () => {
       )
 }
 
-export default Tbbt
+export default Tmkoc
