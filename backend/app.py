@@ -85,11 +85,21 @@ def get_episode_community():
 
 @app.route('/getepisodetmkoc')
 def get_episode_tmkoc():
-    data = pd.read_csv('tmkoc.csv', encoding='cp1252')
-    Generator = data.iloc[[random.randint(1, 110)], [1, 2, 3, 4, 5, 6, 7]]
-    x = Generator.to_json()
-    return x
-
+    try:
+        # Specify the encoding as 'utf-8' when reading the CSV file
+        data = pd.read_csv('tmkoc.csv', encoding='utf-8')
+    except UnicodeDecodeError:
+        # If 'utf-8' fails, try 'cp1252'
+        data = pd.read_csv('tmkoc.csv', encoding='cp1252')
+    
+    # Generate a random episode
+    random_index = random.randint(0, len(data) - 1)
+    episode = data.iloc[random_index, [1, 2, 3, 4, 5, 6, 7]]
+    
+    # Convert the episode to JSON
+    episode_json = episode.to_json()
+    
+    return (episode_json)
 
 
 
