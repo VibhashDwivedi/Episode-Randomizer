@@ -37,7 +37,7 @@ function App() {
        <Route path ='/b99' element={<B99/>} />
        <Route path ='/simpsons' element={<Simpsons/>} />
        <Route path ='/community' element={<Community/>} />
-       <Route path ='/tmkoc' element={<Tmkoc/>} />
+       {/* <Route path ='/tmkoc' element={<Tmkoc/>} /> */}
 
 
 
