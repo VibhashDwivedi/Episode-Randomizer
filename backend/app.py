@@ -88,12 +88,15 @@ def get_episode_tmkoc():
     try:
         # Specify the encoding as 'utf-8' when reading the CSV file
         data = pd.read_csv('tmkoc.csv', encoding='utf-8')
+        print('hello')
     except UnicodeDecodeError:
         # If 'utf-8' fails, try 'cp1252'
         data = pd.read_csv('tmkoc.csv', encoding='cp1252')
+        print('bye')
     
     # Generate a random episode
     random_index = random.randint(0, len(data) - 1)
+    print(random_index)
     episode = data.iloc[random_index, [1, 2, 3, 4, 5, 6, 7]]
     
     # Convert the episode to JSON
