@@ -78,7 +78,7 @@ def get_episode_community():
 
 # Function to make the HTTP GET request
 def reload_website():
-    url = 'https://yourappname123.onrender.com/getepisodetmkoc'
+    url = 'https://episode-randomizer-8ij4.onrender.com'
     try:
         response = requests.get(url)
         print(f"Reloaded at {pd.Timestamp.now()}: Status Code {response.status_code}")
