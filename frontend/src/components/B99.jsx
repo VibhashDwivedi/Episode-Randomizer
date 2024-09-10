@@ -1,80 +1,33 @@
-import React, { useEffect, useState } from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
+import DisplayEpisode from "./DisplayEpisode";
+import useFetchData from "./useFetchData";
 
 const B99 = () => {
-  
-    const api = 'https://episode-randomizer-8ij4.onrender.com'
+  const { data, loading, error } = useFetchData(`getepisodebrooklyn99`);
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
-    const [friends, setFriends] = useState([])
-    
-    const getFriends = async () => {
-        const response = await fetch(`${api}/getepisodebrooklyn99`)
-        const data = await response.json()
-        console.log(data)
-        setFriends(data)
-    
-    }
-    
-    useEffect(() => {
-        getFriends()
-    }
-    , [])
-    
-    
-    
-    if (friends.Season === undefined) {
-        return (
-            <div>
-                Loading...
-            </div>
-        )
-    }
-    
-    const season = Object.values(friends.Season)
-    
-    const episode = Object.values(friends.Episode)
-    
-    const title = Object.values(friends.Title)
-    
-    const summary = Object.values(friends.Summary)
-    
-    
-    const rating = Object.values(friends.Stars)
-    
-    
-    function refreshPage() {
-        window.location.reload(false);
-      }
-      
-    
-    
-    
-    const displayFriends = () => {
-    
-        return (
-            <div>
-                <h1 className='pt-5'>{title}</h1>
-                <h3>Season {season} Episode {episode}</h3>
-                <h4>Rating: {rating}</h4>
-                <h5 className='fw-lighter'>{summary}</h5>
-            </div>
-        )
-    }
-    
-    
-      return (
-        <div className='bg-b99'>
-            <div className="container">
-    
-            {displayFriends()}
-    
-            <Button />
-            
-            </div>
-        </div>
-      )
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
-}
+  return (
+    <div className="bg-b99">
+      <div className="container">
+        <DisplayEpisode
+          title={data.title}
+          season={data.season}
+          episode={data.episode}
+          rating={data.rating}
+          summary={data.summary}
+        />
+        <Button />
+      </div>
+    </div>
+  );
+};
 
-export default B99
+export default B99;
