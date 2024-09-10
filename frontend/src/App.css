@@ -83,6 +83,14 @@
   min-height: 93vh;
 }
 
+.bg-iasip{
+  color: white;
+  font-family: 'open san';
+  /* background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://wallpaperbat.com/img/543388-yes-another-few-community-wallpaper-george-spigots-blog.jpg); */
+  background-size: cover;
+  min-height: 93vh;
+}
+
 @media only screen and (max-width: 600px) {
 
   .bg-friends{
