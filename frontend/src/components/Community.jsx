@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Button from './Button'
 
 const Community = () => {
 
@@ -42,10 +43,7 @@ const Community = () => {
     const rating = Object.values(friends.Stars)
     
     
-    function refreshPage() {
-        window.location.reload(false);
-      }
-      
+   
     
     
     
@@ -67,7 +65,7 @@ const Community = () => {
     <div className="container">
             {displayFriends()}
     
-            <button className=' btn btn-light fs-6' onClick={refreshPage} >Generate Next Episode</button>
+           <Button />
             </div>
         </div>
       )
