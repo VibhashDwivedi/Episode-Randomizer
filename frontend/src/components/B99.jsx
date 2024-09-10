@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Button from './Button'
 
 const B99 = () => {
   
@@ -68,7 +69,8 @@ const B99 = () => {
     
             {displayFriends()}
     
-            <button className=' btn btn-light fs-6' onClick={refreshPage} >Generate Next Episode</button>
+            <Button />
+            
             </div>
         </div>
       )
