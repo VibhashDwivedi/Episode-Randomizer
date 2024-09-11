@@ -86,7 +86,7 @@
 .bg-iasip{
   color: white;
   font-family: 'open san';
-  /* background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://wallpaperbat.com/img/543388-yes-another-few-community-wallpaper-george-spigots-blog.jpg); */
+  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://i.pinimg.com/originals/01/36/9e/01369eea656e1081a7535e841eec5b29.jpg);
   background-size: cover;
   min-height: 93vh;
 }
@@ -121,6 +121,10 @@
 
   .bg-community{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://i.redd.it/season-1-6-posters-v0-jy15dyahjv9a1.jpg?width=736&format=pjpg&auto=webp&s=0ad0d9ccce456f94dfa90fffdb31366ec2995ca4);
+  }
+
+  .bg-iasip{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://image.tmdb.org/t/p/original/2QZB4HdRfi318smoInObzK5pfcG.jpg);
   }
   
 }
