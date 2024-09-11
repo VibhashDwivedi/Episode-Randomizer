@@ -15,9 +15,11 @@ const Navbar = () => {
             <span style={{ fontSize: "30px" }}>R</span>andomizer
           </Link>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0"></ul>
-          </div>
+         <NavLink to= 'https://github.com/VibhashDwivedi/Random-Episode-Generator' style={{ color: "whitesmoke"}}>
+         <i class="fa-brands fa-2x fa-github"></i>
+         </NavLink>
+         
+         
         </div>
       </nav>
     </div>
