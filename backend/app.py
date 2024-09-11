@@ -90,6 +90,13 @@ def get_episode_tmkoc():
     x = Generator.to_json()
     return x
 
+@app.route('/getepisodefamilyguy')
+def get_episode_familyguy():
+    data = pd.read_csv('familyguy.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 400)], [0, 1, 2, 3, 4]]
+    x = Generator.to_json()
+    return x
+
 # Function to make the HTTP GET request
 def reload_website():
     url = 'https://episode-randomizer-8ij4.onrender.com'
@@ -114,7 +121,3 @@ set_interval(reload_website, 30)
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
 
-# Additional code for testing
-data = pd.read_csv('Frnds4.csv', encoding='cp1252')
-Generator = data.iloc[[random.randint(1, 236)], [1, 2, 3, 4]]
-print(Generator)
