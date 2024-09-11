@@ -145,7 +145,7 @@ const Home = () => {
             </div>
             {/* </Flip> */}
           </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3 mb-5">
+          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3 ">
             {/* <Flip left> */}
             <div className="card">
               <div className="card-body">

@@ -87,6 +87,7 @@
   color: white;
   font-family: 'open san';
   background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://i.pinimg.com/originals/01/36/9e/01369eea656e1081a7535e841eec5b29.jpg);
+  background-position: center;
   background-size: cover;
   min-height: 93vh;
 }
