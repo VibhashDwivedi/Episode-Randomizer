@@ -112,7 +112,7 @@ def set_interval(func, sec):
 set_interval(reload_website, 30)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0')
 
 # Additional code for testing
 data = pd.read_csv('Frnds4.csv', encoding='cp1252')
