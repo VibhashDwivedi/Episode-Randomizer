@@ -78,23 +78,10 @@ def get_episode_community():
 
 @app.route('/getepisodeiasip')
 def get_episode_iasip():
-    try:
-        data = pd.read_csv('iasip.csv', encoding='cp1252')
-        print(f"Data read from CSV: {data.head()}")
-        print(f"Data shape: {data.shape}")
-        print(random.randint(1, 162))
-        Generator = data.iloc[[random.randint(1, 150)], [1, 2, 3, 4, 5, 6, 7]]
-        print(f"Generated data: {Generator}")
-        x = Generator.to_json()
-        return x
-    except Exception as e:
-        print(f"Error in /getepisodeiasip: {e}")
-        return jsonify({"error": "Internal Server Error"}), 500
-# def get_episode_iasip():
-#     data = pd.read_csv('iasip.csv', encoding='cp1252')
-#     Generator = data.iloc[[random.randint(1, 162)], [1, 2, 3, 4, 5, 6, 7]]
-#     x = Generator.to_json()
-#     return x
+    data = pd.read_csv('iasip.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(1, 162)], [0, 1, 2, 3, 4, 5, 6]]
+    x = Generator.to_json()
+    return x
 
 # Function to make the HTTP GET request
 def reload_website():
