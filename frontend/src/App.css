@@ -87,7 +87,6 @@
   color: white;
   font-family: 'open san';
   background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://i.pinimg.com/originals/01/36/9e/01369eea656e1081a7535e841eec5b29.jpg);
-  background-position: center;
   background-size: cover;
   min-height: 93vh;
 }
@@ -96,36 +95,46 @@
 
   .bg-friends{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.678)),url(https://i.pinimg.com/564x/38/08/4c/38084cd8dadf9d00224fa88cf4b5e377.jpg);
+    background-position: center;
   }
   .bg-himym{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.815)),url(https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_FMjpg_UX1000_.jpg);
+    background-position: center;
   }
   .bg-tbbt{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.815)),url(https://rukminim1.flixcart.com/image/850/1000/l2f20sw0/poster/a/g/8/small-the-big-bang-theory-poster-for-room-lp-big-bang-theory-28-original-imagdrvwfjcuurhj.jpeg?q=20);
+    background-position: center;
   }
   
   .bg-modern{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://rukminim2.flixcart.com/image/850/1000/l52sivk0/poster/k/h/b/medium-butcutnw13923-modern-family-matte-finish-poster-butcute-original-imagfttvyzdsbryv.jpeg?q=20);
+    background-position: center;
   }
   .bg-office{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://www.themoviedb.org/t/p/original/e2QXQY8al5nY2niTiaFiBJ3hk5a.jpg);
+    background-position: center;
   }
   .bg-got{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://i.pinimg.com/1200x/ae/8c/21/ae8c21bc78b35923cdd54ef5868915ef.jpg);
+    background-position: center;
   }
   .bg-b99{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://wallpapercave.com/wp/wp6790818.jpg);
+    background-position: center;
   }
   .bg-simpsons{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(30, 30, 31, 0.829)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDa04X0OIJijo3ii5N-NqDDlmS4Ewczehkg&usqp=CAU);
+    background-position: center; 
   }
 
   .bg-community{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://i.redd.it/season-1-6-posters-v0-jy15dyahjv9a1.jpg?width=736&format=pjpg&auto=webp&s=0ad0d9ccce456f94dfa90fffdb31366ec2995ca4);
+    background-position: center;
   }
 
   .bg-iasip{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://image.tmdb.org/t/p/original/2QZB4HdRfi318smoInObzK5pfcG.jpg);
+    background-position: center;
   }
   
 }
