@@ -83,6 +83,13 @@ def get_episode_iasip():
     x = Generator.to_json()
     return x
 
+@app.route('/getepisodetmkoc')
+def get_episode_tmkoc():
+    data = pd.read_csv('tmkoc.csv', encoding='cp1252')
+    Generator = data.iloc[[random.randint(2, 4094)], [1, 2, 3, 4, 5]]
+    x = Generator.to_json()
+    return x
+
 # Function to make the HTTP GET request
 def reload_website():
     url = 'https://episode-randomizer-8ij4.onrender.com'

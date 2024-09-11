@@ -12,6 +12,7 @@ import Simpsons from "./components/Simpsons";
 import Community from "./components/Community";
 import Tbbt from "./components/Tbbt";
 import Iasip from "./components/Iasip";
+import Tmkoc from "./components/Tmkoc";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/simpsons" element={<Simpsons />} />
           <Route path="/community" element={<Community />} />
           <Route path="/iasip" element={<Iasip />} />
+          <Route path="/tmkoc" element={<Tmkoc />} />
         </Routes>
       </BrowserRouter>
     </div>
