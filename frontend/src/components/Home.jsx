@@ -7,13 +7,17 @@ const Home = () => {
   return (
     <div className="bg-home">
       <div className="d-flex justify-content-center container">
-        <p
-          className="fs-5 mt-3 text-light-emphasis"
-          style={{ textAlign: "center" }}
-        >
-          Not sure what to watch? We've got you covered! Dive into your favorite
-          series with a twist – discover random episodes with Episode Randomizer
-        </p>
+        <div>
+          <h1 className="text-center text-black mt-1" style={{fontFamily:'Montserrat'}}>Random Episode Generator</h1>
+          <h2
+            className="fs-5 mt-3 text-light-emphasis"
+            style={{ textAlign: "center" , fontFamily:'Montserrat'}}
+          >
+            Not sure what to watch? We've got you covered! Dive into your
+            favorite series with a twist – discover random episodes with Episode
+            Randomizer
+          </h2>
+        </div>
       </div>
       <div className="container">
         <div className="row">
