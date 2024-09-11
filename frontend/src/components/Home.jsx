@@ -8,7 +8,7 @@ const Home = () => {
     <div className="bg-home">
       <div className="d-flex justify-content-center container">
         <div>
-          <h1 className="text-center text-black mt-1" style={{fontFamily:'Montserrat'}}>Random Episode Generator</h1>
+          <h1 className="text-center  mt-1" style={{fontFamily:'Montserrat'}}>Random Episode Generator</h1>
           <h2
             className="fs-5 mt-3 text-light-emphasis"
             style={{ textAlign: "center" , fontFamily:'Montserrat'}}
