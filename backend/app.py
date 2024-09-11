@@ -92,7 +92,7 @@ def get_episode_tmkoc():
 
 @app.route('/getepisodefamilyguy')
 def get_episode_familyguy():
-    data = pd.read_csv('familyguy.csv', encoding='cp1252')
+    data = pd.read_csv('familyguy.csv', encoding='utf-8')
     Generator = data.iloc[[random.randint(1, 400)], [0, 1, 2, 3, 4]]
     x = Generator.to_json()
     return x
