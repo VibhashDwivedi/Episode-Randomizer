@@ -185,7 +185,7 @@ const Home = () => {
                   <img
                     className="card-img-top"
                     height={320}
-                    src="https://lh5.googleusercontent.com/proxy/shqDMz490UF2OhqAyJORjTrMGsV3gSkavCd886kD0c9IdlLwkhB4X1zB7uj4UlvYdsYGA4IN_Xw6JUOueD8vjejWHErbnXRSiC6f6EzWUy7DlR4YJa5enaK-GsD8zIHRNrmqWA"
+                    src="https://e0.pxfuel.com/wallpapers/269/954/desktop-wallpaper-taarak-mehta-ka-ooltah-chashmah-tmkoc-thumbnail.jpg"
                   />
                 </Link>
                 <h5 className="card-title">

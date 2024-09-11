@@ -93,7 +93,7 @@
 .bg-tmkoc{
   color: white;
   font-family: 'open san';
-  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://i.pinimg.com/originals/01/36/9e/01369eea656e1081a7535e841eec5b29.jpg);
+  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.842)),url(https://wallpaperaccess.com/full/6864344.jpg);
   background-size: cover;
   min-height: 93vh;
 }
@@ -141,6 +141,10 @@
 
   .bg-iasip{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://image.tmdb.org/t/p/original/2QZB4HdRfi318smoInObzK5pfcG.jpg);
+    background-position: center;
+  }
+  .bg-tmkoc{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.829)),url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202312/taarak-mehta-ka-ooltah-chashmah-is-not-going-off-air-051213226-3x4.jpg?VersionId=Pa2rGbW92OhGIGqG9WXk94H5.Uowseyi);
     background-position: center;
   }
   

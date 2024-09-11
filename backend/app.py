@@ -85,7 +85,7 @@ def get_episode_iasip():
 
 @app.route('/getepisodetmkoc')
 def get_episode_tmkoc():
-    data = pd.read_csv('tmkoc.csv', encoding='cp1252')
+    data = pd.read_csv('tmkoc.csv', encoding='utf-8')
     Generator = data.iloc[[random.randint(2, 4094)], [1, 2, 3, 4, 5]]
     x = Generator.to_json()
     return x
@@ -112,7 +112,7 @@ def set_interval(func, sec):
 set_interval(reload_website, 30)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
 # Additional code for testing
 data = pd.read_csv('Frnds4.csv', encoding='cp1252')
