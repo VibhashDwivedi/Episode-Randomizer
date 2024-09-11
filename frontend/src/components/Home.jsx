@@ -197,7 +197,7 @@ const Home = () => {
                   <img
                     className="card-img-top"
                     height={320}
-                    src="https://e0.pxfuel.com/wallpapers/269/954/desktop-wallpaper-taarak-mehta-ka-ooltah-chashmah-tmkoc-thumbnail.jpg"
+                    src="https://w0.peakpx.com/wallpaper/635/529/HD-wallpaper-family-guy.jpg"
                   />
                 </Link>
                 <h5 className="card-title">Family Guy</h5>

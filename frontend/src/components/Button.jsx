@@ -8,7 +8,7 @@ const Button = () => {
   return (
     <div>
       <button className=" btn btn-light fs-6" onClick={refreshPage}>
-        Generate Next Episode
+        Generate another Episode
       </button>
     </div>
   );
