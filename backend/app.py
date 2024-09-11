@@ -81,6 +81,7 @@ def get_episode_iasip():
     try:
         data = pd.read_csv('iasip.csv', encoding='cp1252')
         print(f"Data read from CSV: {data.head()}")
+        print(random.randint(1, 162))
         Generator = data.iloc[[random.randint(1, 162)], [1, 2, 3, 4, 5, 6, 7]]
         print(f"Generated data: {Generator}")
         x = Generator.to_json()
