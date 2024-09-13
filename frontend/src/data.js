@@ -7,7 +7,7 @@ const cardData = [
       "https://www.postergully.com/cdn/shop/products/pg1004_7619aa93-d16e-4b99-926f-e61ec09157e7_1024x1024.jpg?v=1578651201",
     link: "/friends",
     altText: "Friends Poster",
-    api: "getepisode",
+    api: "friends",
     className: "bg-friends",
   },
   {
@@ -17,7 +17,7 @@ const cardData = [
       "https://m.media-amazon.com/images/I/61Gp6Ee2EZL._AC_UF894,1000_QL80_.jpg",
     link: "/himym",
     altText: "HIMYM Poster",
-    api: "getepisodehimym",
+    api: "himym",
     className: "bg-himym",
   },
   {
@@ -27,7 +27,7 @@ const cardData = [
       "https://fr.web.img3.acsta.net/c_310_420/pictures/18/11/06/15/36/0408812.jpg",
     link: "/tbbt",
     altText: "TBBT Poster",
-    api: "getepisodetbbt",
+    api: "tbbt",
     className: "bg-tbbt",
   },
   {
@@ -36,7 +36,7 @@ const cardData = [
     imageUrl: "https://static.tvtropes.org/pmwiki/pub/images/mf1.png",
     link: "/modern-family",
     altText: "Modern Family Poster",
-    api: "getepisodemodernfamily",
+    api: "modern-family",
     className: "bg-modern",
   },
   {
@@ -45,7 +45,7 @@ const cardData = [
     imageUrl: "https://m.media-amazon.com/images/I/615MPacH9qL.jpg",
     link: "/the-office",
     altText: "The Office Poster",
-    api: "getepisodetheoffice",
+    api: "theoffice",
     className: "bg-office",
   },
   {
@@ -55,7 +55,7 @@ const cardData = [
       "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
     link: "/game-of-thrones",
     altText: "Game of Thrones Poster",
-    api: "getepisodegot",
+    api: "got",
     className: "bg-got",
   },
   {
@@ -65,7 +65,7 @@ const cardData = [
       "https://resizing.flixster.com/JysRb3DWAU1VI5ywAvY4JwgiWZ0=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjg3MDUxNi53ZWJw",
     link: "/b99",
     altText: "Brooklyn Nine-Nine Poster",
-    api: "getepisodebrooklyn99",
+    api: "b99",
     className: "bg-b99",
   },
   {
@@ -75,7 +75,7 @@ const cardData = [
       "https://i.pinimg.com/originals/c7/b4/b0/c7b4b0c0265a5bc34089e305f507492f.jpg",
     link: "/simpsons",
     altText: "The Simpsons Poster",
-    api: "getepisodesimpsons",
+    api: "simpsons",
     className: "bg-simpsons",
   },
   {
@@ -84,7 +84,7 @@ const cardData = [
     imageUrl: "https://picfiles.alphacoders.com/192/thumb-192752.jpg",
     link: "/community",
     altText: "Community Poster",
-    api: "getepisodecommunity",
+    api: "community",
     className: "bg-community",
   },
   {
@@ -94,7 +94,7 @@ const cardData = [
       "https://lh5.googleusercontent.com/proxy/shqDMz490UF2OhqAyJORjTrMGsV3gSkavCd886kD0c9IdlLwkhB4X1zB7uj4UlvYdsYGA4IN_Xw6JUOueD8vjejWHErbnXRSiC6f6EzWUy7DlR4YJa5enaK-GsD8zIHRNrmqWA",
     link: "/iasip",
     altText: "IASIP Poster",
-    api: "getepisodeiasip",
+    api: "iasip",
     className: "bg-iasip",
   },
   {
@@ -104,7 +104,7 @@ const cardData = [
       "https://e0.pxfuel.com/wallpapers/269/954/desktop-wallpaper-taarak-mehta-ka-ooltah-chashmah-tmkoc-thumbnail.jpg",
     link: "/tmkoc",
     altText: "TMKOC Poster",
-    api: "getepisodetmkoc",
+    api: "tmkoc",
     className: "bg-tmkoc",
   },
   {
@@ -114,7 +114,7 @@ const cardData = [
       "https://w0.peakpx.com/wallpaper/635/529/HD-wallpaper-family-guy.jpg",
     link: "/family-guy",
     altText: "Family Guy Poster",
-    api: "getepisodefamilyguy",
+    api: "familyguy",
     className: "bg-familyguy",
   },
 ];

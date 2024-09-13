@@ -5,7 +5,7 @@ import useFetchData from "./useFetchData";
 import { useParams } from "react-router-dom";
 
 const Show = () => {
-  const { api, className } = useParams();
+  const { api } = useParams();
 
   const { data, loading, error } = useFetchData(decodeURIComponent(api));
 
@@ -18,7 +18,7 @@ const Show = () => {
   }
 
   return (
-    <div className={decodeURIComponent(className)}>
+    <div className={`bg-${decodeURIComponent(api)}`}>
       <div className="container">
         <DisplayEpisode
           title={data.title}
