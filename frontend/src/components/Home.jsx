@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cardData from "../data";
 
 const Home = () => {
   return (
-    <div className="bg-home">
+    <div className="bg-home pb-4">
       <div className="d-flex justify-content-center container">
         <div>
-          <h1
-            className="text-center  mt-1"
-            style={{ fontFamily: "Montserrat" }}
-          >
+          <h1 className="text-center mt-1" style={{ fontFamily: "Montserrat" }}>
             Random Episode Generator
           </h1>
           <h2
@@ -24,205 +22,23 @@ const Home = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            {/* <Flip left> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/friends">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://www.postergully.com/cdn/shop/products/pg1004_7619aa93-d16e-4b99-926f-e61ec09157e7_1024x1024.jpg?v=1578651201"
-                    alt="Friends Poster"
-                  />
-                </Link>
-                <h5 className="card-title">Friends</h5>
+          {cardData.map((card) => (
+            <div key={card.id} className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
+              <div className="card">
+                <div className="card-body">
+                  <Link to={card.link}>
+                    <img
+                      className="card-img-top"
+                      height={320}
+                      src={card.imageUrl}
+                      alt={card.altText}
+                    />
+                  </Link>
+                  <h5 className="card-title">{card.title}</h5>
+                </div>
               </div>
             </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            {/* <Flip right> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/himym">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://m.media-amazon.com/images/I/61Gp6Ee2EZL._AC_UF894,1000_QL80_.jpg"
-                    alt="HIMYM Poster"
-                  />
-                </Link>
-                <h5 className="card-title">How I Met Your Mother</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            {/* <Flip left> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/tbbt">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://fr.web.img3.acsta.net/c_310_420/pictures/18/11/06/15/36/0408812.jpg"
-                    alt="TBBT Poster"
-                  />
-                </Link>
-                <h5 className="card-title">The Big Bang Theory</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2  mt-3">
-            {/* <Flip right> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/modern-family">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://static.tvtropes.org/pmwiki/pub/images/mf1.png"
-                    alt="Modern Family Poster"
-                  />
-                </Link>
-                <h5 className="card-title">Modern Family</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            {/* <Flip right> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/the-office">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://m.media-amazon.com/images/I/615MPacH9qL.jpg"
-                    alt="The Office Poster"
-                  />
-                </Link>
-                <h5 className="card-title">The Office</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            {/* <Flip left> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/game-of-thrones">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
-                    alt="Game of Thrones Poster"
-                  />
-                </Link>
-                <h5 className="card-title">Game Of Thrones</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            {/* <Flip right> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/b99">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://resizing.flixster.com/JysRb3DWAU1VI5ywAvY4JwgiWZ0=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjg3MDUxNi53ZWJw"
-                    alt="Brooklyn Nine-Nine Poster"
-                  />
-                </Link>
-                <h5 className="card-title">Brooklyn Nine-Nine</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2  mt-3">
-            {/* <Flip left> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/simpsons">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://i.pinimg.com/originals/c7/b4/b0/c7b4b0c0265a5bc34089e305f507492f.jpg"
-                    alt="The Simpsons Poster"
-                  />
-                </Link>
-                <h5 className="card-title">The Simpsons</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3 ">
-            {/* <Flip left> */}
-            <div className="card">
-              <div className="card-body">
-                <Link to="/community">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://picfiles.alphacoders.com/192/thumb-192752.jpg"
-                    alt="Community Poster"
-                  />
-                </Link>
-                <h5 className="card-title">Community</h5>
-              </div>
-            </div>
-            {/* </Flip> */}
-          </div>
-
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3 ">
-            <div className="card">
-              <div className="card-body">
-                <Link to="/iasip">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://lh5.googleusercontent.com/proxy/shqDMz490UF2OhqAyJORjTrMGsV3gSkavCd886kD0c9IdlLwkhB4X1zB7uj4UlvYdsYGA4IN_Xw6JUOueD8vjejWHErbnXRSiC6f6EzWUy7DlR4YJa5enaK-GsD8zIHRNrmqWA"
-                    alt="IASIP Poster"
-                  />
-                </Link>
-                <h5 className="card-title">IASIP</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
-            <div className="card">
-              <div className="card-body">
-                <Link to="/tmkoc">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://e0.pxfuel.com/wallpapers/269/954/desktop-wallpaper-taarak-mehta-ka-ooltah-chashmah-tmkoc-thumbnail.jpg"
-                    alt="TMKOC Poster"
-                  />
-                </Link>
-                <h5 className="card-title">TMKOC</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-3 px-5 px-md-2 mt-3 mb-5">
-            <div className="card">
-              <div className="card-body">
-                <Link to="/family-guy">
-                  <img
-                    className="card-img-top"
-                    height={320}
-                    src="https://w0.peakpx.com/wallpaper/635/529/HD-wallpaper-family-guy.jpg"
-                    alt="Family Guy Poster"
-                  />
-                </Link>
-                <h5 className="card-title">Family Guy</h5>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
@@ -230,3 +46,4 @@ const Home = () => {
 };
 
 export default Home;
+
