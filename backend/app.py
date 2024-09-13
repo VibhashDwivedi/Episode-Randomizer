@@ -13,84 +13,84 @@ CORS(app, resources={r"/*": {"origins": ["*"]}})
 def index():
     return 'Hello World!'
 
-@app.route('/getepisode')
+@app.route('/friends')
 def get_episode():
     data = pd.read_csv('friends.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 236)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodehimym')
+@app.route('/himym')
 def get_episode_himym():
     data = pd.read_csv('himym.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 208)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodetbbt')
+@app.route('/tbbt')
 def get_episode_tbbt():
     data = pd.read_csv('tbbt.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 250)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodemodernfamily')
+@app.route('/modern-family')
 def get_episode_modern():
     data = pd.read_csv('modern_family.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 250)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodetheoffice')
+@app.route('/theoffice')
 def get_episode_office():
     data = pd.read_csv('the_office.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 188)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodebrooklyn99')
+@app.route('/b99')
 def get_episode_brooklyn():
     data = pd.read_csv('b99.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 153)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodegot')
+@app.route('/got')
 def get_episode_got():
     data = pd.read_csv('got.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 73)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodesimpsons')
+@app.route('/simpsons')
 def get_episode_simpson():
     data = pd.read_csv('simpsons.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 705)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodecommunity')
+@app.route('/community')
 def get_episode_community():
     data = pd.read_csv('community.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 110)], [1, 2, 3, 4, 5, 6, 7]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodeiasip')
+@app.route('/iasip')
 def get_episode_iasip():
     data = pd.read_csv('iasip.csv', encoding='cp1252')
     Generator = data.iloc[[random.randint(1, 162)], [0, 1, 2, 3, 4, 5, 6]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodetmkoc')
+@app.route('/tmkoc')
 def get_episode_tmkoc():
     data = pd.read_csv('tmkoc.csv', encoding='utf-8')
     Generator = data.iloc[[random.randint(2, 4094)], [1, 2, 3, 4, 5]]
     x = Generator.to_json()
     return x
 
-@app.route('/getepisodefamilyguy')
+@app.route('/familyguy')
 def get_episode_familyguy():
     data = pd.read_csv('familyguy.csv', encoding='utf-8')
     Generator = data.iloc[[random.randint(1, 400)], [0, 1, 2, 3, 4]]

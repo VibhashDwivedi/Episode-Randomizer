@@ -2,9 +2,12 @@ import React from "react";
 import DisplayEpisode from "./DisplayEpisode";
 import Button from "./Button";
 import useFetchData from "./useFetchData";
+import { useParams } from "react-router-dom";
 
-const Tbbt = () => {
-  const { data, loading, error } = useFetchData(`getepisodetbbt`);
+const Show = () => {
+  const { api, className } = useParams();
+
+  const { data, loading, error } = useFetchData(decodeURIComponent(api));
 
   if (loading) {
     return <div>Loading...</div>;
@@ -15,7 +18,7 @@ const Tbbt = () => {
   }
 
   return (
-    <div className="bg-tbbt">
+    <div className={decodeURIComponent(className)}>
       <div className="container">
         <DisplayEpisode
           title={data.title}
@@ -30,4 +33,4 @@ const Tbbt = () => {
   );
 };
 
-export default Tbbt;
+export default Show;

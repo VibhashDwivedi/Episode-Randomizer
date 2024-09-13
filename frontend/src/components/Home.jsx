@@ -26,7 +26,7 @@ const Home = () => {
             <div key={card.id} className="col-sm-12 col-md-3 px-5 px-md-2 mt-3">
               <div className="card">
                 <div className="card-body">
-                  <Link to={card.link}>
+                  <Link to={`/getrandomepisode/${encodeURIComponent(card.api)}/${encodeURIComponent(card.className)}`}>
                     <img
                       className="card-img-top"
                       height={320}
