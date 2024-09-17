@@ -98,25 +98,25 @@ def get_episode_familyguy():
     return x
 
 # Function to make the HTTP GET request
-def reload_website():
-    url = 'https://episode-randomizer-8ij4.onrender.com'
-    try:
-        response = requests.get(url)
-        print(f"Reloaded at {pd.Timestamp.now()}: Status Code {response.status_code}")
-    except requests.RequestException as e:
-        print(f"Error reloading at {pd.Timestamp.now()}: {e}")
+# def reload_website():
+#     url = 'https://episode-randomizer-8ij4.onrender.com'
+#     try:
+#         response = requests.get(url)
+#         print(f"Reloaded at {pd.Timestamp.now()}: Status Code {response.status_code}")
+#     except requests.RequestException as e:
+#         print(f"Error reloading at {pd.Timestamp.now()}: {e}")
 
-# Function to set up an interval for the reload_website function
-def set_interval(func, sec):
-    def func_wrapper():
-        set_interval(func, sec)
-        func()
-    t = threading.Timer(sec, func_wrapper)
-    t.start()
-    return t
+# # Function to set up an interval for the reload_website function
+# def set_interval(func, sec):
+#     def func_wrapper():
+#         set_interval(func, sec)
+#         func()
+#     t = threading.Timer(sec, func_wrapper)
+#     t.start()
+#     return t
 
-# Set the interval to 30 seconds
-set_interval(reload_website, 30)
+# # Set the interval to 30 seconds
+# set_interval(reload_website, 30)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
